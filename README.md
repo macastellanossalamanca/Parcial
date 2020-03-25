@@ -1,14 +1,3 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2511
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\sl280\partightenfactor0
-
-\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 # Escuela Colombiana de Ingenier\'eda Julio Garavito - Arquitecturas de Software ARSW - Parcial Segundo Tercio\
-\
 ## Preparaci\'f3n para el Parcial\
 \
 Con el objetivo de preparar el examen final del segundo tercio, por favor siga las siguientes instrucciones.\
@@ -97,6 +86,8 @@ Sugerencia realice la implementaci\'f3n de manera incremental. Haga commits regu
 ## Bonos\
 \
 1. Si el dato del cache tiene m\'e1s de 5 min se debe solicitar nuevamente al servidor externo.\
+Se trabajo el bono manejanto un un timer y asignandole schedule de 5 minutes para eliminar la info de cache
+![](ArchitectureDiagrams/bono.png)
 2. Poner un marcador NO solo sobre el pa\'eds seleccionado, sino sobre todas las provincias infectadas de ese pa\'eds.\
 \
 ## Ayuda\

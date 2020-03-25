@@ -33,8 +33,10 @@ public class CoronavirusController {
     @RequestMapping(path ="/",method = RequestMethod.GET)
     public ResponseEntity<?> GetCases(){
         try {
-            JsonNode res = coronavirusServices.cities();
-            return new ResponseEntity<>(res.toString(), HttpStatus.ACCEPTED);
+            List res = coronavirusServices.cities();
+            for (JsonNode nodo : lista) {
+                return new ResponseEntity<>(nodo.toString(), HttpStatus.ACCEPTED);
+            }
         } catch (UnirestException e) {
             Logger.getLogger(CoronavirusController.class.getName()).log(Level.SEVERE, null, e);
             return new ResponseEntity<>(e.getMessage(),HttpStatus.NOT_FOUND);

@@ -27,7 +27,7 @@ public class CoronavirusServices {
 
     public JsonNode cities() throws UnirestException {
         JsonNode res = cache.getCities();
-        if(res != null){
+        if(!res.isEmpty()){
             return res;
         }else{
             res = http.getCities();

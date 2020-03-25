@@ -17,13 +17,14 @@ public class CoronavirusCache {
             return null;
         }
     }
-    public JsonNode getCities(String name){
+    public List getCities(String name){
         List lista = new List();
         Iterator it = cities.entrySet().iterator();
         while (it.hasNext()) {
             lista.append(it.next())
             it.remove();
         }
+        return lista
     }
 
     public void add(String name, JsonNode data){
